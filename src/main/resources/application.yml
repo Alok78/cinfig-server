@@ -1,0 +1,10 @@
+server:
+  port: 8084
+  
+spring:
+  application:
+    name: config-server
+    
+  cloud:    config:      server:        git:          uri: https://github.com/Alok78/microservicesconfig
+          clone-on-start: true  
+ 
